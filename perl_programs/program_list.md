@@ -19,6 +19,7 @@ Listed in same order as introduced in the guide
 * [loop_with_next.pl](./loop_with_next.pl)
 * [loop_with_last.pl](./loop_with_last.pl)
 * [arrays.pl](./arrays.pl)
+* [foreach_loop.pl](./foreach_loop.pl)
 * [hashes.pl](./hashes.pl)
 * [references.pl](./references.pl)
 * [subroutines.pl](./subroutines.pl)
