@@ -750,7 +750,7 @@ print "\@even_numbers: @even_numbers\n";
 * `foreach` loop is useful to iterate over an array when we only need its items and not worry about indices or array size
 
 ```
-$
+$ ./foreach_loop.pl
 @numbers:      2 12 3 25 624 21 5 9 12
 @odd_numbers:  3 25 21 5 9
 @even_numbers: 2 12 624 12
