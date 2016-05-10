@@ -1085,7 +1085,7 @@ Regular expression look-up tables
 | \| | OR operator for matching multiple patterns |
 | () | for grouping patterns and also extraction |
 | [] | Character class – match one character among many |
-| \^ | use \ to match special characters like ^ |
+| \\^ | use \ to match special characters like ^ |
 
 <br>
 
