@@ -1,28 +1,31 @@
-# Perl introductory course
+# <a name="perl-introductory-course"></a>Perl introductory course
+
 Introductory course for Perl 5 through examples, geared towards VLSI engineers
 
-## Course Material
-* [Perl intro](./Perl_intro.md)
- *  Introduction
- *  Executing external commands
- *  Scalar Variables
- *  Getting User input
- *  Control Structures
- *  List, Array and Hash variables
- *  Reference and Special Variables
- *  Subroutines and Variable Scope
- *  Regular Expressions
- *  File handling
- *  Command line arguments
- *  Debugging
- *  Perl resources list
- *  To Do
+* [Perl curated resources](https://github.com/learnbyexample/scripting_course/blob/master/Perl_curated_resources.md) for more complete resources list, including Perl 6
+* For more related resources, visit [scripting course](https://github.com/learnbyexample/scripting_course)
 
-* [program list](./perl_programs/program_list.md)
 
-## ebook
-  * Read this course as ebook on [gitbook](https://learnbyexample.gitbooks.io/perl-introduction/content/)
-  * Download ebook in various formats using this [link](https://www.gitbook.com/book/learnbyexample/perl-introduction/details)
+# Chapters
+
+* [Introduction](./Introduction.md)
+* [Executing external commands](./Executing_external_commands.md)
+* [Scalar Variables](./Scalar_variables.md)
+* [Getting User input](./Getting_user_input.md)
+* [Control Structures](./Control_structures.md)
+* [List, Array and Hash variables](./List_array_hash_variables.md)
+* [Reference and Special Variables](./Reference_special_variables.md)
+* [Subroutines and Variable Scope](./Subroutines_variable_scope.md)
+* [Regular Expressions](./Regular_expressions.md)
+* [File handling](./File_handling.md)
+* [Command line arguments](./Command_line_arguments.md)
+* [Debugging](./Debugging.md)
+
+# ebook
+
+* Read as ebook on [gitbook](https://learnbyexample.gitbooks.io/perl-introduction/content/)
+* Download ebook for offline reading - [link](https://www.gitbook.com/book/learnbyexample/perl-introduction/details)
 
 # License
+
 This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/)
