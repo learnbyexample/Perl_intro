@@ -1,4 +1,11 @@
-# Scalar Variables
+# <a name="scalar-variables"></a>Scalar Variables
+
+* [Numbers](#numbers)
+* [Strings](#strings)
+* [Built-in Operators and Functions](#built-in-operators-and-functions)
+
+<br>
+### <a name="numbers"></a>Numbers
 
 A scalar variable holds a single value like **integer, character, string** etc. Perl treats them according to context. Scalar variable is identified by the `$` symbol prefixed to variable name
 
@@ -52,6 +59,9 @@ $ ./numbers.pl
 7 + 42.16 = 49.16
 ```
 
+<br>
+### <a name="strings"></a>Strings
+
 Let's see some strings now
 
 ```perl
@@ -102,7 +112,8 @@ This is a string with concatenation
 Printing 42 five times: 4242424242
 ```
 
-### Built-in Operators and Functions
+<br>
+### <a name="built-in-operators-and-functions"></a>Built-in Operators and Functions
 
 * arithmetic operators
     * `+` addition, `-` subtraction, `*` multiplication, `/` division, `**` exponentiation, `%` modulo
