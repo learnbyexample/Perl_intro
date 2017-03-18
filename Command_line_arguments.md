@@ -7,6 +7,7 @@
 
 
 <br>
+
 ### <a name="known-number-of-arguments"></a>Known number of arguments
 
 ```perl
@@ -55,6 +56,7 @@ $ echo $?
 ```
 
 <br>
+
 ### <a name="varying-number-of-arguments"></a>Varying number of arguments
 
 ```perl
@@ -100,6 +102,7 @@ file_reading.pl               : 15   lines
 ```
 
 <br>
+
 ### <a name="the-$0-argument"></a>The $0 argument
 
 ```perl
@@ -149,6 +152,7 @@ $ wc -lw arrays.pl
 ```
 
 <br>
+
 ### <a name="command-line-switches"></a>Command line switches
 
 ```perl

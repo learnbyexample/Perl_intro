@@ -6,6 +6,7 @@
 
 
 <br>
+
 ### <a name="syntax-checking"></a>Syntax checking
 
 To quickly check for any syntax errors, use the `perl -c` option to execute program
@@ -37,6 +38,7 @@ syntax_error.pl had compilation errors.
 ```
 
 <br>
+
 ### <a name="executing-program-in-debug-mode"></a>Executing program in debug mode
 
 ```
@@ -83,6 +85,7 @@ main::(for_loop.pl:9):	    print "$number * $i = $mul_table\n";
 * `q` quit the debugger
 
 <br>
+
 ### <a name="perl-interactive-mode"></a>Perl interactive mode
 
 This allows us to start an interactive Perl debugger, where we can write snippets of Perl code, see variable results, etc without having to write and rewrite experimental Perl programs

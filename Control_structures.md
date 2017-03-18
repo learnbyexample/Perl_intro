@@ -7,6 +7,7 @@
 
 
 <br>
+
 ### <a name="if-elsif-else"></a>if elsif else
 
 ```perl
@@ -89,6 +90,7 @@ Hurray! 45 is greater than 25
 ```
 
 <br>
+
 ### <a name="for-loop"></a>for loop
 
 ```perl
@@ -116,6 +118,7 @@ $ ./for_loop.pl
 ```
 
 <br>
+
 ### <a name="while-loop"></a>while loop
 
 ```perl
@@ -145,7 +148,9 @@ Enter a palindrome string: malayalam
 ```
 
 <br>
+
 ### <a name="next-and-last"></a>next and last
+
 The `next` and `last` keywords are used to change the normal flow of loops on certain conditions
 
 Example for `next`

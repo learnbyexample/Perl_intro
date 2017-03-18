@@ -14,7 +14,9 @@ From [wikipedia](https://en.wikipedia.org/wiki/Perl)
 It is quite easy to learn, especially if one is already familiar with programming and/or shell scripting.  Perl's easy to use and flexible syntax is both a boon and a curse. There's a running joke that Perl programs look the same before and after encryption, so we'll try to stick to a readable and consistent style over smart tricks in this introductory guide
 
 <br>
+
 ### <a name="installation"></a>Installation
+
 Get Perl for your OS from official website - https://www.perl.org/get.html
 
 * Examples presented here is for **Unix-like systems**, Perl version 5.18.2 and uses **bash** shell
@@ -22,7 +24,9 @@ Get Perl for your OS from official website - https://www.perl.org/get.html
 * It is assumed that you are familiar with command line. If not, check out [this basic tutorial on ryanstutorials](http://ryanstutorials.net/linuxtutorial/) and [this list of curated resources for Linux](https://github.com/learnbyexample/scripting_course/blob/master/Linux_curated_resources.md)
 
 <br>
+
 ### <a name="hello-world-example"></a>Hello World example
+
 Let's start with simple a Perl program and how to run it
 
 ```perl
@@ -39,7 +43,9 @@ The first line has two parts
 The third line prints the message `Hello World` with a `\n` character to print newline after the message
 
 <br>
+
 ### <a name="running-perl-program"></a>Running Perl program
+
 You can write the program using text editor like **gedit** or **[vim](http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/)**
 
 After saving the file, give execute permission and run the program from a terminal
@@ -68,6 +74,7 @@ This is perl 5, version 18, subversion 2 (v5.18.2) built for x86_64-linux-gnu-th
 * [Running Perl programs](http://perldoc.perl.org/perlintro.html#Running-Perl-programs) - for more options to run a Perl program
 
 <br>
+
 ### <a name="using-strict-and-warnings-flags"></a>Using strict and warnings flags
 
 To avoid common programming mistakes and typos, it is helpful to always include these two compilation flags

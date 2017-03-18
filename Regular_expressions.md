@@ -81,6 +81,7 @@ Regular expression look-up tables
 | $' | String after matched pattern |
 
 <br>
+
 ### <a name="pattern-matching-and-extraction"></a>Pattern matching and extraction
 
 ```perl
@@ -148,6 +149,7 @@ Output when pattern does not match: ''
 ```
 
 <br>
+
 ### <a name="transliteration-operator"></a>Transliteration operator
 
 ```perl
@@ -200,6 +202,7 @@ $mixed_str has 40 letters and 2 digits
 ```
 
 <br>
+
 ### <a name="search-and-replace"></a>Search and Replace
 
 ```perl
@@ -282,6 +285,7 @@ corrected: Can you spot the mistakes? I seem to not
 ```
 
 <br>
+
 ### <a name="split"></a>split
 
 ```perl

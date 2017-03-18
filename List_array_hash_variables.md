@@ -7,7 +7,9 @@
 
 
 <br>
+
 ### <a name="lists"></a>lists
+
 List provides an easy way to group different values/variables together
 
 ```perl
@@ -16,7 +18,9 @@ my ($str2, $num2, $char2) = ("$str1 to you :)", 42, 'y');
 ```
 
 <br>
+
 ### <a name="arrays"></a>arrays
+
 Arrays provide a way to keep scalar values together in a single variable
 
 ```perl
@@ -111,6 +115,7 @@ $#places = -1
 ```
 
 <br>
+
 ### <a name="iterating-over-arrays"></a>Iterating over arrays
 
 ```perl
@@ -151,7 +156,9 @@ for my $i (0 .. $#numbers)
 ```
 
 <br>
+
 ### <a name="hashes"></a>Hashes
+
 Hash, or associative array, is similar to array, but each element has a key associated with it instead of numbered indices  
 Hash variable is prefixed with %
 

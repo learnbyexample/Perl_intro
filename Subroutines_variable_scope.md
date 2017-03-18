@@ -5,6 +5,7 @@
 
 
 <br>
+
 ### <a name="subroutines"></a>Subroutines
 
 ```perl
@@ -79,7 +80,9 @@ Max value: 234
 * [sort](http://perldoc.perl.org/functions/sort.html)
 
 <br>
+
 ### <a name="variable-scope"></a>Variable Scope
+
 Let's see some examples of how the use of `my` keyword to declare variables affects where it is accessible within the program
 
 ```perl

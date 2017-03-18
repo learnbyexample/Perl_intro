@@ -5,6 +5,7 @@
 
 
 <br>
+
 ### <a name="references"></a>references
 
 ```perl
@@ -54,7 +55,9 @@ Would you like to have 'East' speciality 'shondesh' today?
 ```
 
 <br>
+
 ### <a name="perl-special-variables"></a>Perl special variables
+
 Certain variables have special meaning in Perl and used for variety of purposes
 
 For example, the `$_` as default iterator variable in `foreach` loop

@@ -5,6 +5,7 @@
 
 
 <br>
+
 ### <a name="user-input"></a>User input
 
 Let's see how to get input from user
@@ -69,6 +70,7 @@ learnbyexample
 ```
 
 <br>
+
 ### <a name="chomp"></a>chomp
 
 ```perl

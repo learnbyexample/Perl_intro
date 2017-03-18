@@ -7,6 +7,7 @@
 
 
 <br>
+
 ### <a name="reading-files"></a>Reading files
 
 ```perl
@@ -42,6 +43,7 @@ print "Hello World\n";
 ```
 
 <br>
+
 ### <a name="declaring-file-encoding-and-using-autodie"></a>Declaring file encoding and using autodie
 
 ```perl
@@ -75,6 +77,7 @@ Can't open 'file_doesnt_exist.txt' for reading: 'No such file or directory' at .
 ```
 
 <br>
+
 ### <a name="writing-to-files"></a>Writing to files
 
 ```perl
@@ -112,6 +115,7 @@ Yet another line
 ```
 
 <br>
+
 ### <a name="nested-file-handling"></a>Nested file handling
 
 Often, one needs to read one file to get list of filenames for further processing. Nesting `while` loop with filehandles may result in unintended consequences  
