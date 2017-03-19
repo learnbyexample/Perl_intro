@@ -43,6 +43,8 @@ Regular expression look-up tables
 | \s | Match white-space character, same as [\ \t\r\n\f] |
 | \S | Match non white-space character, same as \[^\s] |
 | \t | Match horizontal tab character |
+| \h | Match horizontal space characters |
+| \H | Match other than horizontal space characters |
 
 <br>
 
