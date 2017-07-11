@@ -1,3 +1,7 @@
+Use [![Join the chat at https://gitter.im/learnbyexample/scripting_course](https://badges.gitter.im/learnbyexample/scripting_course.svg)](https://gitter.im/learnbyexample/scripting_course) if you need help, have suggestions, etc
+
+<br>
+
 # <a name="perl-introductory-course"></a>Perl introductory course
 
 Introductory course for Perl 5 through examples, geared towards VLSI engineers
