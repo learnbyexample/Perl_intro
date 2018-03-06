@@ -1,4 +1,4 @@
-Use [![Join the chat at https://gitter.im/learnbyexample/scripting_course](https://badges.gitter.im/learnbyexample/scripting_course.svg)](https://gitter.im/learnbyexample/scripting_course) if you need help, have suggestions, etc
+[![Join the chat at https://gitter.im/learnbyexample/scripting_course](https://badges.gitter.im/learnbyexample/scripting_course.svg)](https://gitter.im/learnbyexample/scripting_course) [![support learnbyexample](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/learnbyexample/donate)
 
 <br>
 
@@ -6,7 +6,7 @@ Use [![Join the chat at https://gitter.im/learnbyexample/scripting_course](https
 
 Introductory course for Perl 5 through examples, geared towards VLSI engineers
 
-* [Perl curated resources](https://github.com/learnbyexample/scripting_course/blob/master/Perl_curated_resources.md) for more complete resources list, including Perl 6
+* See [Perl curated resources](https://github.com/learnbyexample/scripting_course/blob/master/Perl_curated_resources.md) for more complete resources list, including Perl 6
 * For more related resources, visit [scripting course](https://github.com/learnbyexample/scripting_course)
 
 
@@ -32,4 +32,4 @@ Introductory course for Perl 5 through examples, geared towards VLSI engineers
 
 # License
 
-This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/)
