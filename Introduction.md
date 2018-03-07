@@ -20,8 +20,8 @@ It is quite easy to learn, especially if one is already familiar with programmin
 Get Perl for your OS from official website - https://www.perl.org/get.html
 
 * Examples presented here is for **Unix-like systems**, Perl version 5.18.2 and uses **bash** shell
-* You can also try running Perl code online, [tutorialspoint](http://www.tutorialspoint.com/execute_perl_online.php) is one of them
-* It is assumed that you are familiar with command line. If not, check out [this basic tutorial on ryanstutorials](http://ryanstutorials.net/linuxtutorial/) and [this list of curated resources for Linux](https://github.com/learnbyexample/scripting_course/blob/master/Linux_curated_resources.md)
+* You can also try running Perl code online, [tutorialspoint](https://www.tutorialspoint.com/execute_perl_online.php) is one of them
+* It is assumed that you are familiar with command line. If not, check out [this basic tutorial on ryanstutorials](https://ryanstutorials.net/linuxtutorial/) and [this list of curated resources for Linux](https://github.com/learnbyexample/scripting_course/blob/master/Linux_curated_resources.md)
 
 <br>
 
@@ -38,7 +38,7 @@ print "Hello World\n";
 The first line has two parts
 
 * `/usr/bin/perl` is the path of Perl interpreter
-* `#!` called as **[shebang](https://en.wikipedia.org/wiki/Shebang_(Unix))**, directs the program loader to use the interpreter path provided
+* `#!` called the **[shebang](https://en.wikipedia.org/wiki/Shebang_(Unix))**, directs the program loader to use the interpreter path provided
 
 The third line prints the message `Hello World` with a `\n` character to print newline after the message
 
@@ -64,22 +64,22 @@ $ type perl
 perl is /usr/bin/perl
 
 $ perl -v
-This is perl 5, version 18, subversion 2 (v5.18.2) built for x86_64-linux-gnu-thread-multi
+This is perl 5, version 22, subversion 1 (v5.22.1) built for x86_64-linux-gnu-thread-multi
 (with 44 registered patches, see perl -V for more detail)
 ...
 ```
 
 **Further Reading**
 
-* [Running Perl programs](http://perldoc.perl.org/perlintro.html#Running-Perl-programs) - for more options to run a Perl program
+* [Running Perl programs](https://perldoc.perl.org/perlintro.html#Running-Perl-programs) - for more options to run a Perl program
 
 <br>
 
 ### <a name="using-strict-and-warnings-flags"></a>Using strict and warnings flags
 
-To avoid common programming mistakes and typos, it is helpful to always include these two compilation flags
+To avoid common mistakes and typos, it is helpful to always include these two pragmas
 
-**strict**
+[strict](https://perldoc.perl.org/strict.html)
 
 ```perl
 #!/usr/bin/perl
@@ -91,11 +91,11 @@ Let's see what happens when we try to execute this program:
 
 ```
 $ ./strict.pl
-Global symbol "$uninitialized" requires explicit package name at ./strict.pl line 4.
+Global symbol "$uninitialized" requires explicit package name (did you forget to declare "my $uninitialized"?) at perl_programs/strict.pl line 4.
 Execution of ./strict.pl aborted due to compilation errors.
 ```
 
-**warnings**
+[warnings](https://perldoc.perl.org/warnings.html)
 
 ```perl
 #!/usr/bin/perl
@@ -105,7 +105,7 @@ print "\n----------------------------------------\n";
 print "Printing < $uninitialized > variable\n";
 print "----------------------------------------\n";
 ```
-While **strict** flag aborts program execution, **warnings** flag executes the program but provides a more helpful message
+While **strict** pragma aborts program execution, **warnings** pragma executes the program but provides a more helpful message
 
 ```
 $ ./warnings.pl
@@ -119,8 +119,7 @@ Printing <  > variable
 
 **Further Reading**
 
-* [Always use strict and warnings](http://perlmaven.com/always-use-strict-and-use-warnings)
-* [Common warnings and error messages](http://perlmaven.com/common-warnings-and-error-messages)
-* Perldoc: [strict](http://perldoc.perl.org/strict.html) and [warnings](http://perldoc.perl.org/warnings.html)
+* [Always use strict and warnings](https://perlmaven.com/always-use-strict-and-use-warnings)
+* [Common warnings and error messages](https://perlmaven.com/common-warnings-and-error-messages)
 
 
