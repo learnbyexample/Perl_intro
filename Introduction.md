@@ -1,10 +1,13 @@
 # <a name="introduction"></a>Introduction
 
+**Table of Contents**
+
 * [Installation](#installation)
 * [Hello World example](#hello-world-example)
 * [Running Perl program](#running-perl-program)
-* [Using strict and warnings flags](#using-strict-and-warnings-flags)
+* [Using strict and warnings pragmas](#using-strict-and-warnings-pragmas)
 
+<br>
 
 From [wikipedia](https://en.wikipedia.org/wiki/Perl)
 >Perl is a family of high-level, general-purpose, interpreted, dynamic programming languages. The languages in this family include Perl 5 and Perl 6
@@ -15,17 +18,17 @@ It is quite easy to learn, especially if one is already familiar with programmin
 
 <br>
 
-### <a name="installation"></a>Installation
+## <a name="installation"></a>Installation
 
 Get Perl for your OS from official website - https://www.perl.org/get.html
 
-* Examples presented here is for **Unix-like systems**, Perl version 5.18.2 and uses **bash** shell
-* You can also try running Perl code online, [tutorialspoint](https://www.tutorialspoint.com/execute_perl_online.php) is one of them
-* It is assumed that you are familiar with command line. If not, check out [this basic tutorial on ryanstutorials](https://ryanstutorials.net/linuxtutorial/) and [this list of curated resources for Linux](https://github.com/learnbyexample/scripting_course/blob/master/Linux_curated_resources.md)
+* Examples presented here is for Perl version 5.22.1 and uses **bash** shell
+* It is assumed that you are familiar with command line. If not, check out [ryanstutorials - linuxtutorial](https://ryanstutorials.net/linuxtutorial/) and [this curated list](https://github.com/learnbyexample/scripting_course/blob/master/Linux_curated_resources.md)
+* You can also try running Perl code online, for ex: [tutorialspoint - Execute Perl Online](https://www.tutorialspoint.com/execute_perl_online.php)
 
 <br>
 
-### <a name="hello-world-example"></a>Hello World example
+## <a name="hello-world-example"></a>Hello World example
 
 Let's start with simple a Perl program and how to run it
 
@@ -38,15 +41,15 @@ print "Hello World\n";
 The first line has two parts
 
 * `/usr/bin/perl` is the path of Perl interpreter
-* `#!` called the **[shebang](https://en.wikipedia.org/wiki/Shebang_(Unix))**, directs the program loader to use the interpreter path provided
+* `#!` called the [shebang](https://en.wikipedia.org/wiki/Shebang_(Unix)), directs the program loader to use the interpreter path provided
 
 The third line prints the message `Hello World` with a `\n` character to print newline after the message
 
 <br>
 
-### <a name="running-perl-program"></a>Running Perl program
+## <a name="running-perl-program"></a>Running Perl program
 
-You can write the program using text editor like **gedit** or **[vim](http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/)**
+You can write the program using text editor like **gedit**, **[vim](http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/)** etc
 
 After saving the file, give execute permission and run the program from a terminal
 
@@ -71,15 +74,15 @@ This is perl 5, version 22, subversion 1 (v5.22.1) built for x86_64-linux-gnu-th
 
 **Further Reading**
 
-* [Running Perl programs](https://perldoc.perl.org/perlintro.html#Running-Perl-programs) - for more options to run a Perl program
+* [perldoc - Running Perl programs](https://perldoc.perl.org/perlintro.html#Running-Perl-programs) - for more options to run a Perl program
 
 <br>
 
-### <a name="using-strict-and-warnings-flags"></a>Using strict and warnings flags
+## <a name="using-strict-and-warnings-pragmas"></a>Using strict and warnings pragmas
 
 To avoid common mistakes and typos, it is helpful to always include these two pragmas
 
-[strict](https://perldoc.perl.org/strict.html)
+1) `strict`
 
 ```perl
 #!/usr/bin/perl
@@ -95,7 +98,7 @@ Global symbol "$uninitialized" requires explicit package name (did you forget to
 Execution of ./strict.pl aborted due to compilation errors.
 ```
 
-[warnings](https://perldoc.perl.org/warnings.html)
+2) `warnings`
 
 ```perl
 #!/usr/bin/perl
@@ -105,7 +108,7 @@ print "\n----------------------------------------\n";
 print "Printing < $uninitialized > variable\n";
 print "----------------------------------------\n";
 ```
-While **strict** pragma aborts program execution, **warnings** pragma executes the program but provides a more helpful message
+**warnings** pragma as the name suggests, gives various types of warnings and also has settings to control which warnings to give, raise to fatal, etc
 
 ```
 $ ./warnings.pl
@@ -119,7 +122,9 @@ Printing <  > variable
 
 **Further Reading**
 
-* [Always use strict and warnings](https://perlmaven.com/always-use-strict-and-use-warnings)
-* [Common warnings and error messages](https://perlmaven.com/common-warnings-and-error-messages)
+* [perldoc - strict](https://perldoc.perl.org/strict.html)
+* [perldoc - warnings](https://perldoc.perl.org/warnings.html)
+* [perlmaven - Always use strict and warnings](https://perlmaven.com/always-use-strict-and-use-warnings)
+* [perlmaven - Common warnings and error messages](https://perlmaven.com/common-warnings-and-error-messages)
 
 
