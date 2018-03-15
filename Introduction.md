@@ -6,6 +6,7 @@
 * [Hello World example](#hello-world-example)
 * [Running Perl program](#running-perl-program)
 * [Using strict and warnings pragmas](#using-strict-and-warnings-pragmas)
+* [Perl REPL](#perl-repl)
 
 <br>
 
@@ -53,7 +54,7 @@ You can write the program using text editor like **gedit**, **[vim](http://yanne
 
 After saving the file, give execute permission and run the program from a terminal
 
-```
+```bash
 $ chmod +x hello_world.pl
 
 $ ./hello_world.pl 
@@ -62,7 +63,7 @@ Hello World
 
 To find out Perl path and Perl version in your system
 
-```
+```bash
 $ type perl
 perl is /usr/bin/perl
 
@@ -127,4 +128,44 @@ Printing <  > variable
 * [perlmaven - Always use strict and warnings](https://perlmaven.com/always-use-strict-and-use-warnings)
 * [perlmaven - Common warnings and error messages](https://perlmaven.com/common-warnings-and-error-messages)
 
+<br>
 
+## <a name="perl-repl"></a>Perl REPL
+
+* Short programs can be directly supplied to `perl` command using `-e` option instead of using code written in a file
+    * [perl -e](https://github.com/learnbyexample/Command-line-text-processing/blob/master/perl_the_swiss_knife.md) is often used as an alternate to `sed/awk` for one-liners
+
+```bash
+$ perl -e 'print "Hello Perl\n"'
+Hello Perl
+
+$ perl -le 'print 25**12'
+59604644775390625
+```
+
+* Perl doesn't come with REPL(interactive session for exploring, testing, etc) unlike languages like Python.
+* However, one could workaround using [debugger](./Debugging.md) command line option along with `-e`
+
+```bash
+$ # Note: only relevant details will be shown while using perl -de0
+$ # spacing is adjusted to allow better context
+$ # use 'h' or 'h h' command to get help
+$ # 'p' command is like print, useful to print value of variable/expression
+$ # use 'q' to exit the debugger
+$ perl -de0
+
+DB<1> print "Hello Perl\n"
+Hello Perl
+
+DB<2> $x = 512
+DB<4> p $x * 2
+1024
+
+DB<5> q
+```
+
+**Further Reading**
+
+* [Devel::REPL](https://metacpan.org/pod/Devel::REPL)
+* [Carp::REPL](https://www.effectiveperlprogramming.com/2010/06/carprepl/)
+* [Reply](https://randomgeekery.org/2014/08/14/repl-in-perl-with-reply/)
