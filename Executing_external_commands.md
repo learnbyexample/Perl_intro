@@ -109,7 +109,8 @@ my $curr_working_dir = `pwd`;
 print "Your current working directory is: $curr_working_dir";
 ```
 
-* to save stdout of external command in a variable, place the command within backticks or use `qx` operator
+* to save stdout of external command in a variable, place the command within backticks
+* or use `qx` operator, which allows to use different delimiters
 
 ```bash
 $ ./backticks.pl 
@@ -127,9 +128,13 @@ DB<2> p $nums
 2
 3
 
-DB<3> $op = qx/ls out.txt xyz/
+DB<3> $foo = qx{echo `seq 2`}
+DB<4> p $foo
+1 2
+
+DB<5> $op = qx(ls out.txt xyz)
 ls: cannot access 'xyz': No such file or directory
-DB<4> p $op
+DB<6> p $op
 out.txt
 ```
 
