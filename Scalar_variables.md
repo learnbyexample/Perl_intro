@@ -8,6 +8,7 @@
 <br>
 
 * A scalar variable holds a single value, i.e number/string/reference
+    * references are covered in a [later chapter](./Reference_special_variables.md)
 * these have `$` symbol prefixed to variable name
 * Perl automatically infers and converts the values based on context - for ex: numbers present in string form
     * as per `perldoc`, the techinal jargon is **contextually polymorphic language**
@@ -31,7 +32,7 @@ my $sum  = $num1 + $num2;
 print "$num1 + $num2 = $sum\n";
 ```
 
-* For now, we'll use the `my` keyword for variable declaration and revisit the topic in a later section
+* For now, we'll use the `my` keyword for variable declaration and revisit the topic in a [later chapter](./Subroutines_variable_scope.md)
 
 ```bash
 $ ./integers.pl
@@ -115,51 +116,82 @@ DB<5> p 0b1010_0011
 
 Let's see some strings now
 
-```perl
-#!/usr/bin/perl
-use strict;
-use warnings;
+* single quoted strings
+* no interpolation or escape sequences
+    * except for allowing `\'` when single quote itself is needed
 
-# strings are declared inside single or double quotes
-my $str1 = 'This is a string';
-print "$str1\n";
+```bash
+$ perl -de0
 
-# Use single quotes to prevent interpretation of special characters 
-my $greeting = 'Hello\tWorld';
-print "$greeting\n";
+DB<1> $greeting = 'Hello World'
+DB<2> p $greeting
+Hello World
 
-# Use double quotes to allow interpretation of special characters 
-$greeting = "Hello\tWorld";
-print "$greeting\n";
+DB<3> $regex = 'foo\d+'
+DB<4> p $regex
+foo\d+
 
-# numbers and strings can be freely mixed
-my $num   = 42;
-my $quote = "The Ultimate Answer to Life, The Universe and Everything is...$num!";
-print "$quote\n";
-
-my $str_num = "16";
-my $sum     = $num + $str_num;
-print "$num + $str_num = $sum\n";
-
-# string concatenation operator
-my $concatenated_str = "$str1"." with concatenation";
-print "$concatenated_str\n";
-
-# string multiplication operator
-my $multiplied_str = "$num" x 5;
-print "Printing 42 five times: $multiplied_str\n";
+DB<5> $msg = 'It\'s so good'   
+DB<6> p $msg 
+It's so good
 ```
 
-Running the program:
+* double quoted strings
+* allows interpolation and escape sequences
+    * See [perldoc - Quote and Quote-like Operators](https://perldoc.perl.org/perlop.html#Quote-and-Quote-like-Operators) for details
 
+```bash
+$ perl -de0
+
+DB<1> $greeting = 'Hello World'
+DB<2> p "$greeting. How are you?"
+Hello World. How are you?
+
+DB<3> $fav_books = "Harry Potter\nSherlock Holmes\nStormlight Archive"
+DB<4> p $fav_books
+Harry Potter
+Sherlock Holmes
+Stormlight Archive
+
+DB<5> $c = 5
+DB<6> p "I want $c apples"
+I want 5 apples
+
+DB<7> $prefix = 'hand'
+DB<8> p "${prefix}y ${prefix}ful ${prefix}book"
+handy handful handbook
 ```
-$ ./strings.pl
-This is a string
-Hello\tWorld
-Hello	World
-The Ultimate Answer to Life, The Universe and Everything is...42!
-42 + 16 = 58
-This is a string with concatenation
-Printing 42 five times: 4242424242
+
+* string operators
+* `.` for string concatenation and `x` for string repetition
+
+```bash
+$ perl -de0
+
+DB<1> $s1 = 'good'
+DB<2> $s2 = 'day'
+DB<3> p $s1 . $s2
+goodday
+
+DB<4> $fmt = '-' x 25
+DB<5> p "$fmt\n\t$s1 $s2\n$fmt"
+-------------------------
+        good day
+-------------------------
+```
+
+* quote operators, allows to use different delimiters
+* `q` for single quoted strings and `qq` for double quoted strings
+
+```bash
+$ perl -de0
+
+DB<1> p q/It's so good/
+It's so good
+
+DB<2> $f1 = 'mango'      
+DB<3> $f2 = 'orange'
+DB<4> p qq(I like "$f1" and "$f2")
+I like "mango" and "orange"
 ```
 
