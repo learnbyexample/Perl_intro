@@ -25,7 +25,7 @@ Get Perl for your OS from official website - https://www.perl.org/get.html
 
 * Examples presented here is for Perl version 5.22.1 and uses **bash** shell
 * It is assumed that you are familiar with command line. If not, check out [ryanstutorials - linuxtutorial](https://ryanstutorials.net/linuxtutorial/) and [this curated list](https://github.com/learnbyexample/scripting_course/blob/master/Linux_curated_resources.md)
-* You can also try running Perl code online, for ex: [tutorialspoint - Execute Perl Online](https://www.tutorialspoint.com/execute_perl_online.php)
+* You can also try running Perl code online, for ex: [perltuts](http://dev.perltuts.com/try)
 
 <br>
 
@@ -169,3 +169,4 @@ DB<5> q
 * [Devel::REPL](https://metacpan.org/pod/Devel::REPL)
 * [Carp::REPL](https://www.effectiveperlprogramming.com/2010/06/carprepl/)
 * [Reply](https://randomgeekery.org/2014/08/14/repl-in-perl-with-reply/)
+
