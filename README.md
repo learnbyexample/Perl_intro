@@ -23,7 +23,7 @@ Introductory course for Perl 5 through examples, geared towards VLSI engineers
 # ebook
 
 * Read as ebook on [gitbook](https://learnbyexample.gitbooks.io/perl-introduction/content/)
-* Download ebook for offline reading - [link](https://www.gitbook.com/book/learnbyexample/perl-introduction/details)
+* All `legacy.gitbook.com` links are now automatically redirected to `gitbook.com`, so there's no longer an option to download ebooks for offline reading
 
 # License
 
